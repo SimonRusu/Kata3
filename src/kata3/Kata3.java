@@ -15,7 +15,21 @@ public class Kata3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        HistogramDisplay histo = new HistogramDisplay("Mi Histograma");
+        Histogram h = new Histogram();
+        h.increment("GMAIL.COM");
+        h.increment("GMAIL.COM");
+        h.increment("HOTMAIL.COM");
+        h.increment("OUTLOOK.COM");
+        h.increment("OUTLOOK.COM");
+        h.increment("OUTLOOK.COM");
+        h.increment("OUTLOOK.COM");
+        h.increment("OUTLOOK.COM");
+        h.increment("OUTLOOK.COM");
+        h.increment("MARCA.COM");
+        h.increment("APPLE.COM");
+        
+        
+        HistogramDisplay histo = new HistogramDisplay("Mi Histograma",h);
         histo.execute();
     }
     
